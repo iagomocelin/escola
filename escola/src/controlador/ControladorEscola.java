@@ -56,19 +56,25 @@ public class ControladorEscola {
     public static void atualizarTabela(JTable tabela) {
         DefaultTableModel modelo = new DefaultTableModel();
         //definindo o cabeçalho da tabela
-
+ 
+        modelo.addColumn("CÓDIGO");
         modelo.addColumn("NOME");
         modelo.addColumn("SIGLA");
+        modelo.addColumn("ENDEREÇO");
         modelo.addColumn("NÚMERO DE ALUNOS");
+        modelo.addColumn("ÁREA");
         List<Escola> resultados = EscolaDao.consultar();
         for (Escola objeto : resultados) {
             Vector linha = new Vector();
             
             //definindo o conteúdo da tabela
-           
+            linha.add(objeto.getCodigo());
             linha.add(objeto.getNome());
-            linha.add(objeto.getSigla());
+            linha.add(objeto.getSigla());            
+            linha.add(objeto.getEndereco());
             linha.add(objeto.getNumerodealunos());
+            linha.add(objeto.getArea());
+
             modelo.addRow(linha); //adicionando a linha na tabela
         }
         tabela.setModel(modelo);
