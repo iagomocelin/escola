@@ -93,7 +93,7 @@ public class ManutencaoEscola extends javax.swing.JDialog {
             }
         });
 
-        jLabel7.setText("ÁREA (m2);");
+        jLabel7.setText("ÁREA (m2):");
 
         jtfArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,7 +187,7 @@ dispose();       // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void jtfExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfExcluirActionPerformed
-controlador.ControladorEscola.excluir(this);        // TODO add your handling code here:
+   // TODO add your handling code here:
     }//GEN-LAST:event_jtfExcluirActionPerformed
 
     private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed

@@ -14,8 +14,8 @@ public class Escola {
    private String nome;
    private String endereco;
    private String sigla;
-   private int nrdealunos;
-   private int area;
+   private int numerodealunos;
+   private Double area;
 
     public int getCodigo() {
         return codigo;
@@ -49,33 +49,25 @@ public class Escola {
         this.sigla = sigla;
     }
 
-    public int getNrdealunos() {
-        return nrdealunos;
+    public int getNumerodealunos() {
+        return numerodealunos;
     }
 
-    public void setNrdealunos(int nrdealunos) {
-        this.nrdealunos = nrdealunos;
+    public void setNumerodealunos(int nrdealunos) {
+        this.numerodealunos = numerodealunos;
     }
 
-    public int getArea() {
+    public Double getArea() {
         return area;
     }
 
-    public void setArea(int area) {
+    public void setArea(Double area) {
         this.area = area;
     }
 
     @Override
     public String toString() {
-        return "modelo{" + "nrdealunos=" + nrdealunos + '}';
-    }
-
-    public int getNumerodealunos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setNumerodealunos(int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "modelo{" + "numerodealunos=" + numerodealunos + '}';
     }
    
 }
